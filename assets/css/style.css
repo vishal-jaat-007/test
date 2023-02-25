@@ -171,6 +171,9 @@ nav ul li {
 }
 
 /* ..................timeline............ */
+.width {
+    max-width: 1200px;
+}
 
 .timeline {
     position: relative;
@@ -230,7 +233,7 @@ nav ul li {
 
 .timeline_5_img1 {
     top: 40px;
-    left:250px;
+    left: 250px;
 }
 
 .timeline_5_img2 {
@@ -274,38 +277,45 @@ nav ul li {
 .accordion-button {
     background-color: #FFF03F;
 }
+
 .accordion-button:not(.collapsed) {
     color: var(--bs-accordion-active-color);
     background-color: #FFF03F;
     box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
-.accordion-body{
+
+.accordion-body {
     background-color: #FFF03F;
 }
+
 .accordion-button:focus {
     z-index: 3;
-    
+
     outline: 0;
     box-shadow: none;
 }
-.rotate{
+
+.rotate {
     animation-name: animation;
-    animation-duration: 5s ;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 
 }
- .clr:hover{
+
+.clr:hover {
     color: #F4241E;
 }
 
-@keyframes animation{
-    to{
+@keyframes animation {
+    to {
         rotate: 360deg;
     }
 }
+
 .accordion {
     --bs-accordion-border-color: #FFF03F;
 }
+
 @media screen and (max-width: 600px) {
     .timeline::after {
         left: 31px;
@@ -377,6 +387,7 @@ nav ul li {
 
     }
 }
+
 @media (max-width:768px) {
     :root {
         /* font_size */
